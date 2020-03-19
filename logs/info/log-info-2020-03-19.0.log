@@ -1,0 +1,51 @@
+2020-03-19 23:44:03.956 [restartedMain] INFO  c.d.transaction.SpringBootTransactionApplication - Starting SpringBootTransactionApplication on DESKTOP-268H1QN with PID 12284 (D:\IdeaWorkSpaces\GitHub\spring-boots-project\spring-boot-transaction\target\classes started by FangSS in D:\IdeaWorkSpaces\GitHub\spring-boots-project)
+2020-03-19 23:44:03.958 [restartedMain] INFO  c.d.transaction.SpringBootTransactionApplication - The following profiles are active: dev
+2020-03-19 23:44:04.013 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-19 23:44:04.013 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-19 23:44:04.920 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8282 (http)
+2020-03-19 23:44:04.928 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8282"]
+2020-03-19 23:44:04.929 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-19 23:44:04.929 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-19 23:44:05.012 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-19 23:44:05.013 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 999 ms
+2020-03-19 23:44:05.161 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-19 23:44:05.248 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-03-19 23:44:05.286 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-19 23:44:05.288 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-03-19 23:44:05.310 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-03-19 23:50:39.037 [restartedMain] INFO  c.d.transaction.SpringBootTransactionApplication - Starting SpringBootTransactionApplication on DESKTOP-268H1QN with PID 7356 (D:\IdeaWorkSpaces\GitHub\spring-boots-project\spring-boot-transaction\target\classes started by FangSS in D:\IdeaWorkSpaces\GitHub\spring-boots-project)
+2020-03-19 23:50:39.039 [restartedMain] INFO  c.d.transaction.SpringBootTransactionApplication - The following profiles are active: dev
+2020-03-19 23:50:39.111 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-19 23:50:39.111 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-19 23:50:39.924 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8282 (http)
+2020-03-19 23:50:39.932 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8282"]
+2020-03-19 23:50:39.932 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-19 23:50:39.932 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-19 23:50:40.009 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-19 23:50:40.010 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 898 ms
+2020-03-19 23:50:40.135 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-19 23:50:40.221 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-03-19 23:50:40.259 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-19 23:50:40.262 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-03-19 23:50:40.276 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-03-19 23:56:46.366 [restartedMain] INFO  c.d.transaction.SpringBootTransactionApplication - Starting SpringBootTransactionApplication on DESKTOP-268H1QN with PID 7996 (D:\IdeaWorkSpaces\GitHub\spring-boots-project\spring-boot-transaction\target\classes started by FangSS in D:\IdeaWorkSpaces\GitHub\spring-boots-project)
+2020-03-19 23:56:46.369 [restartedMain] INFO  c.d.transaction.SpringBootTransactionApplication - The following profiles are active: dev
+2020-03-19 23:56:46.458 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-19 23:56:46.458 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-19 23:56:47.209 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8282 (http)
+2020-03-19 23:56:47.217 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8282"]
+2020-03-19 23:56:47.217 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-19 23:56:47.217 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-19 23:56:47.296 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-19 23:56:47.296 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 838 ms
+2020-03-19 23:56:47.426 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-19 23:56:47.507 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-03-19 23:56:47.548 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-19 23:56:47.550 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-03-19 23:56:47.565 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
