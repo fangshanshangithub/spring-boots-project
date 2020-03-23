@@ -1,10 +1,10 @@
 spring:
   datasource:
     druid:
-      url: jdbc:mysql://localhost:3306/test
+      url: jdbc:mysql://localhost:3306/trans_demo?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
       username: root
       password: root
-      driver-class-name: com.mysql.jdbc.Driver
+      driver-class-name: com.mysql.cj.jdbc.Driver
       type: com.alibaba.druid.pool.DruidDataSource
 
       initial-size: 8

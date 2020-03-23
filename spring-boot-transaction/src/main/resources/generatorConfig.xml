@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+
+	<!--<properties resource="application.properties" />-->
+	
+	
+
+	<classPathEntry location="E:\MavenRepository\mysql\mysql-connector-java\5.1.47\mysql-connector-java-5.1.47.jar" />
+
+	<context id="context1" >
+		<property name="beginningDelimiter" value="`" />
+		<property name="endingDelimiter" value="`" />
+		<property name="javaFileEncoding" value="UTF-8"/>
+
+		<!-- <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
+			<property name="mappers" value="com.gxyj.cashier.utils.CasherMapper" />
+		</plugin> -->
+
+<!--		<commentGenerator type="com.demo.transaction.xmlgenerator.MyCommentGenerator">
+			<property name="suppressAllComments" value="false" />
+			<property name="suppressDate" value="false" />
+			<property name="encoding" value="utf-8" />
+		</commentGenerator>-->
+		
+		
+		<!-- <jdbcConnection driverClass="${spring.datasource.type}"
+                        connectionURL="${spring.datasource.url}"
+                        userId="${spring.datasource.username}"
+                        password="${spring.datasource.password}">
+        </jdbcConnection> -->
+
+
+	<jdbcConnection connectionURL="jdbc:mysql://localhost:3306/trans_demo?useUnicode=true&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC"
+			driverClass="com.mysql.cj.jdbc.Driver" password="root" userId="root" />
+
+		<javaModelGenerator targetPackage="com.demo.transaction.model"
+			targetProject="src\main\java" />
+
+		<sqlMapGenerator targetPackage="mapper"
+			targetProject="src\main\resources" />
+
+		<javaClientGenerator targetPackage="com.demo.transaction.dao"
+			targetProject="src\main\java" type="XMLMAPPER" />
+			
+		<!--XMLMAPPER, ANNOTATEDMAPPER -->
+
+		
+		<table schema="trans_demo" tableName="trans_animal"
+			enableSelectByExample="false" enableDeleteByExample="false"
+			enableCountByExample="false" enableUpdateByExample="false"
+			selectByExampleQueryId="false">
+
+			<generatedKey column="id" sqlStatement="Mysql" identity="true" />
+		</table>	
+		
+		
+
+
+
+
+
+
+	</context>
+</generatorConfiguration>
