@@ -49,6 +49,14 @@
             </exclusions>
         </dependency>
 
+        <!-- springboot,mybatis 整合包 -->
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>2.1.2</version>
+        </dependency>
+
+
         <!-- 阿里 druid 数据库连接池 -->
         <dependency>
             <groupId>com.alibaba</groupId>

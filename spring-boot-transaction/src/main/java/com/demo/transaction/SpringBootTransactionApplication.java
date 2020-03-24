@@ -1,5 +1,6 @@
 package com.demo.transaction;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
@@ -10,6 +11,7 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 @SpringBootApplication
+@MapperScan("com.demo.transaction.dao.**") //扫描的mapper
 public class SpringBootTransactionApplication {
     private static final Logger log = LoggerFactory.getLogger(SpringBootTransactionApplication.class);
     private final Environment env;

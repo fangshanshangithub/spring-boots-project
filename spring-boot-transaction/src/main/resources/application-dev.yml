@@ -25,12 +25,12 @@ spring:
       use-global-data-source-stat: true
 
 
-### mybatis config ###
-mybtais:
-   config-locations: classpath:mybatis/mybatis-config.xml
-   mapper-locations: classpath:mybatis/mapper/*.xml
-   type-aliases-package: com.demo.transaction.pojo
 
 ### log config ###
 logging:
   config: classpath:logback-spring.xml
+
+### mybatis config ###
+mybatis:
+  mapper-locations: classpath*:mapper/*.xml
+  type-aliases-package: com.demo.transaction.model
