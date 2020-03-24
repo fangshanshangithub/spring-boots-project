@@ -1,7 +1,7 @@
 spring:
   datasource:
     druid:
-      url: jdbc:mysql://localhost:3306/trans_demo?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+      url: jdbc:mysql://localhost:3306/trans_demo?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
       username: root
       password: root
       driver-class-name: com.mysql.cj.jdbc.Driver
@@ -29,6 +29,8 @@ spring:
 ### log config ###
 logging:
   config: classpath:logback-spring.xml
+
+
 
 ### mybatis config ###
 mybatis:
