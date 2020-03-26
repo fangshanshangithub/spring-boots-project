@@ -7,4 +7,6 @@ public interface ITransactionService {
     boolean save(TransAnimal transAnimal);
 
     boolean saveAll(String name);
+
+    boolean checkError(String name) throws Exception;
 }

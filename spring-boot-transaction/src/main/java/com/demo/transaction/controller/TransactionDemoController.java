@@ -31,14 +31,14 @@ public class TransactionDemoController {
     }
 
 
-    @RequestMapping("/saveAll")
-    public boolean saveAll(String name) {
-        return transactionService.saveAll(name);
+    @RequestMapping("/checkError")
+    public boolean saveCheckError(String name) throws Exception {
+        return transactionService.checkError(name);
     }
 
 
 
-    @RequestMapping("/")
+    @RequestMapping("/saveAll")
     public boolean saveAll(String name) {
         return transactionService.saveAll(name);
     }
