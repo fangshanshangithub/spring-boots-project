@@ -26,4 +26,14 @@ class SpringBootTransactionApplicationTests {
 
     }
 
+    @Test
+    void rollbackTest() {
+        String name = "ROLK";
+        try {
+            transactionService.rollback(name);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
 }

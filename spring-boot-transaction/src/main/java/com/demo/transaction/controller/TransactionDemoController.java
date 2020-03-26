@@ -38,10 +38,6 @@ public class TransactionDemoController {
 
 
 
-    @RequestMapping("/")
-    public boolean saveAll(String name) {
-        return transactionService.saveAll(name);
-    }
 
 
 }
