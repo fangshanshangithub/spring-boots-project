@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Date;
 
 @RestController
-@RequestMapping("/trans")
+@RequestMapping("/trn")
 public class TransactionDemoController {
 
     @Autowired
@@ -21,10 +21,10 @@ public class TransactionDemoController {
     }
 
     @RequestMapping("/save")
-    public boolean save() {
+    public boolean save(String name) {
         TransAnimal transAnimal = new TransAnimal();
         transAnimal.setAnimalType(1);
-        transAnimal.setAnimalTypeName("陆地动物");
+        transAnimal.setAnimalTypeName("陆地动物-"+ name);
         transAnimal.setCreateTime(new Date());
         transAnimal.setUpdateTime(new Date());
         return transactionService.save(transAnimal);
@@ -32,9 +32,17 @@ public class TransactionDemoController {
 
 
     @RequestMapping("/saveAll")
-    public boolean saveAll() {
-        return transactionService.saveAll();
+    public boolean saveAll(String name) {
+        return transactionService.saveAll(name);
     }
+
+
+
+    @RequestMapping("/")
+    public boolean saveAll(String name) {
+        return transactionService.saveAll(name);
+    }
+
 
 }
 

@@ -27,10 +27,10 @@ public class TransactionServiceImpl implements ITransactionService {
     }
 
     @Override
-    public boolean saveAll() {
+    public boolean saveAll(String name) {
 
         SkyAnimal skyAnimal = new SkyAnimal();
-        skyAnimal.setSkyAnimalName("乌鸦");
+        skyAnimal.setSkyAnimalName("公乌鸦-" + name);
         skyAnimal.setCreateTime(new Date());
         skyAnimal.setUpdateTime(new Date());
         skyAnimalMapper.insertSelective(skyAnimal);
@@ -38,10 +38,17 @@ public class TransactionServiceImpl implements ITransactionService {
 
         TransAnimal transAnimal = new TransAnimal();
         transAnimal.setAnimalType(1);
-        transAnimal.setAnimalTypeName("陆地动物");
+        transAnimal.setAnimalTypeName("陆地动物-" + name);
         transAnimal.setCreateTime(new Date());
         transAnimal.setUpdateTime(new Date());
         transAnimalMapper.insertSelective(transAnimal);
+
+
+        SkyAnimal skyAnimal11 = new SkyAnimal();
+        skyAnimal11.setSkyAnimalName("母乌鸦-" + name);
+        skyAnimal11.setCreateTime(new Date());
+        skyAnimal11.setUpdateTime(new Date());
+        skyAnimalMapper.insertSelective(skyAnimal11);
 
 
         return true;
