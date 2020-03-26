@@ -8,7 +8,7 @@
 	
 	
 
-	<classPathEntry location="E:\MavenRepository\mysql\mysql-connector-java\5.1.47\mysql-connector-java-5.1.47.jar" />
+	<classPathEntry location="D:\MavenRepository\mysql\mysql-connector-java\8.0.16\mysql-connector-java-8.0.16.jar" />
 
 	<context id="context1" >
 		<property name="beginningDelimiter" value="`" />
@@ -47,16 +47,22 @@
 			
 		<!--XMLMAPPER, ANNOTATEDMAPPER -->
 
-		
+		<!--
 		<table schema="trans_demo" tableName="trans_animal"
 			enableSelectByExample="false" enableDeleteByExample="false"
 			enableCountByExample="false" enableUpdateByExample="false"
 			selectByExampleQueryId="false">
 
 			<generatedKey column="id" sqlStatement="Mysql" identity="true" />
-		</table>	
-		
-		
+		</table>-->
+
+		<table schema="trans_demo" tableName="sky_animal"
+			   enableSelectByExample="false" enableDeleteByExample="false"
+			   enableCountByExample="false" enableUpdateByExample="false"
+			   selectByExampleQueryId="false">
+
+			<generatedKey column="id" sqlStatement="Mysql" identity="true" />
+		</table>
 
 
 

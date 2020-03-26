@@ -1,8 +1,3 @@
-# Getting Started
+# Spring 事务注解使用
 
-### Reference Documentation
-For further reference, please consider the following sections:
-
-* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
-* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.2.5.RELEASE/maven-plugin/)
-
+propagation	事务的传播行为，默认值为 REQUIRED。

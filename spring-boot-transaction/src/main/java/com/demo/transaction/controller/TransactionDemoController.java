@@ -29,5 +29,12 @@ public class TransactionDemoController {
         transAnimal.setUpdateTime(new Date());
         return transactionService.save(transAnimal);
     }
+
+
+    @RequestMapping("/saveAll")
+    public boolean saveAll() {
+        return transactionService.saveAll();
+    }
+
 }
 

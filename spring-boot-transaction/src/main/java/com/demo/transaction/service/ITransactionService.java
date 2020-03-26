@@ -6,4 +6,5 @@ public interface ITransactionService {
 
     boolean save(TransAnimal transAnimal);
 
+    boolean saveAll();
 }
