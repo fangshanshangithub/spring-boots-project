@@ -29,6 +29,7 @@ public class TransactionServiceImpl implements ITransactionService {
     }
 
     @Override
+    @Transactional
     public boolean saveAll(String name) {
 
         SkyAnimal skyAnimal = new SkyAnimal();
@@ -57,8 +58,15 @@ public class TransactionServiceImpl implements ITransactionService {
     }
 
     @Override
-    @Transactional(propagation = Propagation.REQUIRED)
+    @Transactional
     public boolean checkError(String name) throws Exception {
+
+
+        if(name != null) {
+                throw new Exception("万恶的异常输出");
+
+        }
+
 
         SkyAnimal skyAnimal = new SkyAnimal();
         skyAnimal.setSkyAnimalName("公乌鸦-" + name);
@@ -67,9 +75,6 @@ public class TransactionServiceImpl implements ITransactionService {
         skyAnimalMapper.insertSelective(skyAnimal);
 
 
-        if(name != null) {
-            throw new Exception("万恶的异常输出");
-        }
 
 
         SkyAnimal skyAnimal11 = new SkyAnimal();
