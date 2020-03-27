@@ -1,0 +1,12 @@
+server:
+  port: 8191
+spring:
+  application:
+    name: zk-base
+  profiles:
+    active: family
+
+## zk ≈‰÷√
+zookeeper:
+  address: 127.0.0.1:2181
+  timeout: 4000
