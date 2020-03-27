@@ -31,17 +31,13 @@ public class TransactionDemoController {
     }
 
 
-    @RequestMapping("/checkError")
-    public boolean saveCheckError(String name) throws Exception {
-        return transactionService.checkError(name);
-    }
-
-
-
     @RequestMapping("/saveAll")
     public boolean saveAll(String name) {
         return transactionService.saveAll(name);
     }
+
+
+
 
 
 }

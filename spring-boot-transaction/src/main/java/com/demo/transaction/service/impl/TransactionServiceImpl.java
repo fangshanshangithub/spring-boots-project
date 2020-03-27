@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Date;
 
@@ -29,7 +30,6 @@ public class TransactionServiceImpl implements ITransactionService {
     }
 
     @Override
-    @Transactional
     public boolean saveAll(String name) {
 
         SkyAnimal skyAnimal = new SkyAnimal();
@@ -55,6 +55,37 @@ public class TransactionServiceImpl implements ITransactionService {
 
 
         return true;
+    }
+
+
+    /**
+     * 1.没有 Transactional 事务注解没有回滚，报错之前的代码正常执行
+     * 2.@Transactional(rollbackFor = Exception.class) 出现异常回滚
+     */
+    @Override
+    //@Transactional(rollbackFor = Exception.class) // [1]
+    //public boolean rollback(String name) throws Exception { // [3]
+    public boolean rollback(String name){
+        SkyAnimal skyAnimal = new SkyAnimal();
+        skyAnimal.setSkyAnimalName("乌鸦-rollback-" + name);
+        skyAnimal.setCreateTime(new Date());
+        skyAnimal.setUpdateTime(new Date());
+        skyAnimalMapper.insertSelective(skyAnimal);
+
+        //int i = 10/0; // [2]
+        /* // [3]
+        if(null != name) {
+            throw  new Exception("AAAA");
+        }
+        */
+
+        SkyAnimal skyAnimal11 = new SkyAnimal();
+        skyAnimal11.setSkyAnimalName("凤凰-rollback-" + name);
+        skyAnimal11.setCreateTime(new Date());
+        skyAnimal11.setUpdateTime(new Date());
+        skyAnimalMapper.insertSelective(skyAnimal11);
+
+        return false;
     }
 
     @Override

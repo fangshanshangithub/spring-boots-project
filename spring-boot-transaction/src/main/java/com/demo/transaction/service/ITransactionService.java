@@ -8,5 +8,8 @@ public interface ITransactionService {
 
     boolean saveAll(String name);
 
+
+    boolean rollback(String name) throws Exception;
+
     boolean checkError(String name) throws Exception;
 }
