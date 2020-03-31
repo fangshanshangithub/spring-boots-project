@@ -1,5 +1,9 @@
 package com.zookeeper.base.config;
 
+import org.apache.curator.RetryPolicy;
+import org.apache.curator.framework.CuratorFramework;
+import org.apache.curator.framework.CuratorFrameworkFactory;
+import org.apache.curator.retry.ExponentialBackoffRetry;
 import org.apache.zookeeper.WatchedEvent;
 import org.apache.zookeeper.Watcher;
 import org.apache.zookeeper.ZooKeeper;
@@ -55,5 +59,20 @@ public class ZookeeperConfig {
     }
 
 
+    public String getConnectString() {
+        return connectString;
+    }
+
+    public void setConnectString(String connectString) {
+        this.connectString = connectString;
+    }
+
+    public int getTimeout() {
+        return timeout;
+    }
+
+    public void setTimeout(int timeout) {
+        this.timeout = timeout;
+    }
 }
 
