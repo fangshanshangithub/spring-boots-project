@@ -23,10 +23,10 @@ public class ZookeeperConfig {
     private static final Logger logger = LoggerFactory.getLogger(ZookeeperConfig.class);
 
     @Value("${zookeeper.address}")
-    private    String connectString;
+    private String connectString;
 
     @Value("${zookeeper.timeout}")
-    private  int timeout;
+    private int timeout;
 
 
     @Bean(name = "zkClient")
